@@ -205,3 +205,16 @@ body{
   .accordion input[type="radio"]:checked + label::after{
     transform: rotate(45deg);
   }
+  .content-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+  }
+  .faq .email-sign{
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 20px;
+  }
