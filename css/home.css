@@ -7,7 +7,7 @@ body{
 
   .header{
     width:100%;
-    height: 100vh;
+    height: 70vh;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/header-image.png);
     background-size: cover;
     background-position: center;
@@ -44,16 +44,14 @@ body{
   }
   .header-content{
     
-    min-height: 30rem;
+    
     padding: 7.5rem 0 2rem;
     margin-top: 180px;
     max-width: calc( 100% - 3rem );
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    flex-basis: 50%;
     padding: 0;
     z-index: 1;
     width: 100%;
@@ -81,23 +79,26 @@ body{
     
   }
   .sign-containt{
+    margin-top: 2px;
     display: flex;
     gap: 10px;
+    
   }
 
   .email-sign input{
     width: 400px;
-    background-color: transparent;
+    background-color: rgba(9, 9, 9, 0.42);
     font-size: 1rem;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.32);
     border-radius: 5px;
-    line-height: 1.5;
+    outline: none;
     font-size: 18px;
     padding: 15px;
     margin-left: 20px;
 
   }
+  
 
   .email-sign button{
     display: flex;
@@ -121,12 +122,13 @@ body{
     font-size: 22px;
   }
   .row{
+
     display: flex;
     width: 100%;
     border-top: 6px solid #333;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 50px 18%;
     
   }
 
@@ -156,20 +158,25 @@ body{
   }
 
   .faq{
+    
     border-top: 6px solid #333;
     padding: 10px 12%;
+    padding-top: 60px;
     text-align: center;
     font-size: 18px;
   }
-
+ 
   .faq h2{
-    font-weight: 500;
+    font-weight: bold;
     font-size: 40px;
+   
   }
   .accordion{
+   
     margin: 60px auto;
+    margin-top: 20px;
     width: 100%;
-    max-width: 750px;
+    max-width: 1000px;
   }
 
   .accordion li{
@@ -223,9 +230,14 @@ body{
     flex-direction: column;
     justify-content: center;
 
+  }
 
+  .content-2 small{
+    font-size: 1.2rem;
   }
   .sign-containt{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100px;
   }
@@ -253,25 +265,27 @@ body{
   .footer{
     padding: 50px 15% 10px;
     border-top: 6px solid #333;
-    color: #777;
+    color: #8f8f8f;
   }
   .footer h2{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
+    text-decoration: underline;
   }
 
   .footer .col{
     flex-basis: 25%;
     flex-grow: 1;
     margin-bottom: 20px;
+    text-decoration: underline;
 
   }
 
   .footer .col a{
     display: block;
     text-decoration: none;
-    color: #777;
+    color: #8f8f8f;
     font-size: 14px;
     margin-bottom: 10px;
   }
