@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e9bb57cd30.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="style.css">
@@ -20,61 +21,70 @@
         <div class="nav">
             <img src="img/logo.png" class="logo">   
             <div>
-                <button>Sign In</button>
+                <a class="btnSign" href="#">Sign In</a>
             </div>
         </div>
         
         <div class="header-content">
             <h1>Unlimited movies, TV shows, and more</h1>
-            <h3>Watch anywhere. Cancel anytime.</h3>
-            <span>Ready to watch? Enter your email to create or restart your membership.</span>
-            <form class="email-sign">
-                <div class="sign-containt">
-                    <input type="email" placeholder="Email address" required>
-                    <button type="submit">Get Started<ion-icon class="icon" name="chevron-forward-outline"></ion-icon></button>
-                </div>  
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+            <form>
+                <div>
+                    <input type="email"> 
+                    <span>Email address</span>
+                </div>
+                <div>
+                    <button type="submit">Get Started &gt;</button>
+                </div>
             </form>
         </div>
 
     </div>
     <div class="features">
-        <div class="row">
-            <div class="text-col">
-                <h2>Enjoy on your TV</h2>
-                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-            </div>
-            <div class="img-col">
-                <img src="img/feature-1.png" alt="feature-1">
-            </div>
-        </div>
-        <div class="row">
-            <div class="img-col">
-                <img src="img/feature-2.png" alt="feature-1">
-            </div>
-            <div class="text-col">
-                <h2>Download your shows to watch offline</h2>
-                <p>Save your favorites easily and always have something to watch.</p>
-            </div>
-           
-        </div>
-        <div class="row">
-            <div class="text-col">
-                <h2>Watch everywhere</h2>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-            </div>
-            <div class="img-col">
-                <img src="img/feature-3.png" alt="feature-1">
+        <div class="row-container">
+            <div class="row">
+                <div class="text-col">
+                    <h2>Enjoy on your TV</h2>
+                    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                </div>
+                <div class="img-col">
+                    <img src="img/feature-1.png" alt="feature-1">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="img-col">
-                <img src="img/feature-4.png" alt="feature-1">
+        <div class="row-container">
+            <div class="row">
+                <div class="img-col">
+                    <img src="img/feature-2.png" alt="feature-1">
+                </div>
+                <div class="text-col">
+                    <h2>Download your shows to watch offline</h2>
+                    <p>Save your favorites easily and always have something to watch.</p>
+                </div>
             </div>
-            <div class="text-col">
-                <h2>Create profiles for kids</h2>
-                <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        </div>
+        <div class="row-container">
+            <div class="row">
+                <div class="text-col">
+                    <h2>Watch everywhere</h2>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+                <div class="img-col">
+                    <img src="img/feature-3.png" alt="feature-1">
+                </div>
             </div>
-            
+        </div>
+        <div class="row-container">
+            <div class="row">
+                <div class="img-col">
+                    <img src="img/feature-4.png" alt="feature-1">
+                </div>
+                <div class="text-col">
+                    <h2>Create profiles for kids</h2>
+                    <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="faq">
@@ -128,11 +138,14 @@
         </ul>
         <div class="content-2">
             <small>Ready to watch? Enter your email to create or restart your membership.</small>
-            <form class="email-sign">
-                <div class="sign-containt">
-                    <input type="email" placeholder="Email address" required>
-                    <button type="submit">Get Started<ion-icon class="icon" name="chevron-forward-outline"></ion-icon></button>
-                </div>  
+            <form>
+                <div>
+                    <input type="email"> 
+                    <span>Email address</span>
+                </div>
+                <div>
+                    <button type="submit">Get Started &gt;</button>
+                </div>
             </form>
         </div>
     </div>
@@ -163,7 +176,15 @@
             <a href="#">Contact Us</a>
         </div>
     </div>
-    <button class="language-btn"><ion-icon name="language-outline"></ion-icon>English <img class="btn-img" src="img/down-icon.png" width="10px"></button>
+    <div>
+        <ion-icon id="lang-ico" name="language-outline"></ion-icon>
+        <select>
+           
+            <option value="">English</option>
+        </select>
+    </div>
+   
+    <!-- <button class="language-btn"><ion-icon name="language-outline"></ion-icon>English <img class="btn-img" src="img/down-icon.png" width="10px"></button> -->
     <p class="county-text">Netflix Sri Lanka</p>
 </div>
     

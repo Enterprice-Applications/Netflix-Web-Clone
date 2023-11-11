@@ -12,7 +12,7 @@ body{
     background-size: cover;
     background-position: center;
     padding: 10px 3%;
-    position: relative;
+   
 
   }
   .nav{
@@ -22,123 +22,130 @@ body{
     align-items:center;
     justify-content: space-between;
     height: 3rem;
-    
-
   }
+
   .logo{
-    width: 125px;
-    cursor: pointer;
-    padding: 10px;
+    width: 148px;
+    padding: 0;
   }
 
-  .nav button{
-    border: 0;
-    outline: 0;
+  .nav a.btnSign{
     background: #db0001;
     color: white;
-    padding: 9px 20px;
-    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 14px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
   }
+
   .header-content{
-    
-    
-    padding: 7.5rem 0 2rem;
-    margin-top: 180px;
-    max-width: calc( 100% - 3rem );
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0;
-    z-index: 1;
     width: 100%;
     line-height: 50px;
+    font-weight: normal; 
+    margin-bottom: 126.5px;
+    margin-top: 126.5px;
+    padding-top: 100px;
+    padding-bottom: 64px;
+   
   }
 
   .header-content h1{
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-
-
+  font-size: 2.98rem;
   }
 
-  .header-content h3{
+  .header-content h2{
+    margin-top: 7px;
+    margin-bottom: 7px;
     font-weight: 400;
   }
 
-  .email-sign{
+  .header-content h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+  }  
 
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    overflow: hidden;
-    
-  }
-  .sign-containt{
-    margin-top: 2px;
-    display: flex;
-    gap: 10px;
-    
+  .header-content form {
+    position: relative;
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: 1fr max-content;
   }
 
-  .email-sign input{
-    width: 400px;
+  .header-content input{
+    padding: 19px 12px;
     background-color: rgba(9, 9, 9, 0.42);
-    font-size: 1rem;
-    color: white;
     border: 1px solid rgba(255, 255, 255, 0.32);
-    border-radius: 5px;
+    width: 368px;
+    color: #fff;
     outline: none;
-    font-size: 18px;
-    padding: 15px;
-    margin-left: 20px;
-
-  }
-  
-
-  .email-sign button{
-    display: flex;
-    background: #db0001;
-    border-radius: 8px;
-    outline: 0;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 15px 30px;
-    font-weight: bold;
+    border-radius: 5px;
   }
 
-  .icon  {
-    margin-left: 5px;
-    font-size: 33px;
+  .header-content input ~ span {
+    position: absolute;
+    left: 18px;
+    top: 2px;
+    z-index: 3;
+    transition: all 0.2s ease;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
   }
-  
+
+  .header-content input:focus ~ span {
+    top:1px;
+    font-size: 0.7rem;
+  }
+
+  .header-content input:focus{
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .header-content button{
+    margin-left: 10px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    padding: 12px 25px;
+    background-color: #db0001;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+  }
+
   .features{
-    
     font-size: 22px;
   }
-  .row{
 
-    display: flex;
+  .row-container{
+    border-top: 8px solid #252525; 
     width: 100%;
-    border-top: 6px solid #333;
+
+  }
+  .row{
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px 18%;
-    
+    padding: 50px 0px 50px 0px ; 
   }
 
   .row .text-col,
   .row .img-col {
     margin: 10px 0 10px 0;
   }
+
   .text-col{
     flex-basis: 50%;
     margin-bottom: 20px;
+
   }
   .img-col{
     flex-basis: 50%;
@@ -158,7 +165,6 @@ body{
   }
 
   .faq{
-    
     border-top: 6px solid #333;
     padding: 10px 12%;
     padding-top: 60px;
@@ -169,14 +175,13 @@ body{
   .faq h2{
     font-weight: bold;
     font-size: 40px;
-   
   }
+
   .accordion{
-   
     margin: 60px auto;
     margin-top: 20px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
   }
 
   .accordion li{
@@ -222,51 +227,75 @@ body{
     max-height: 600px;
     padding: 30px 20px;
   }
+
   .accordion input[type="radio"]:checked + label::after{
     transform: rotate(45deg);
   }
+
   .content-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
   .content-2 small{
     font-size: 1.2rem;
   }
-  .sign-containt{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-  }
-  .sign-containt input
-  {
-    height: 60px;
-    font-size: 16px;
-    
+
+  .content-2 form {
+    position: relative;
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: 1fr max-content;
   }
 
-  .sign-containt button{
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    font-size: 18px;
-    width: 190px;
-    
+  .content-2 input{
+    padding: 19px 12px;
+    background-color: rgba(9, 9, 9, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    width: 368px;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
   }
-  .sign-containt button .icon{
-    font-size: 16px;
-    margin-right: 0;
+
+  .content-2 input ~ span {
+    position: absolute;
+    left: 18px;
+    top: 2px;
+    z-index: 3;
+    transition: all 0.2s ease;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+  }
+
+  .content-2 input:focus ~ span {
+    top:1px;
+    font-size: 0.7rem;
+  }
+
+  .content-2 input:focus{
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .content-2 button{
+    margin-left: 10px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    padding: 12px 25px;
+    background-color: #db0001;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
   }
  
-
   .footer{
     padding: 50px 15% 10px;
     border-top: 6px solid #333;
     color: #8f8f8f;
   }
+
   .footer h2{
     font-size: 18px;
     font-weight: 400;
@@ -281,7 +310,6 @@ body{
     text-decoration: underline;
 
   }
-
   .footer .col a{
     display: block;
     text-decoration: none;
@@ -299,11 +327,20 @@ body{
     align-items: flex-start;
     padding: 10px 0;
   }
-  .footer button{
-    display: flex;
-    justify-content: space-around;
-    gap: 5px;
-    font-size: 14px;
+
+ .footer select{
+  background: transparent;
+  color: #fff;
+  padding: 6px 0 6px 20px;
+  border-radius: 3px;
+
+ }
+ .footer #lang-ico{
+  height: 20px;
+  color: #fff;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 2px;
  }
 
   .footer .language-btn{
