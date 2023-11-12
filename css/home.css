@@ -124,7 +124,7 @@ body{
   }
 
   .row-container{
-    border-top: 8px solid #252525; 
+    border-top: 8px solid #444; 
     width: 100%;
 
   }
@@ -158,6 +158,21 @@ body{
     margin: auto;
   }
 
+  .row-container .row .img-col .media{
+    position: relative;
+  }
+
+  .row-container .row .img-col .media img{
+    width: 400px;
+  }
+
+  .row-container .row .img-col .media video{
+    width: 293px;
+    position: absolute;
+    top: 62px;
+    left: 79px;
+  }
+
   .features h2{
     font-size: 50px;
     font-weight: 600;
@@ -165,7 +180,7 @@ body{
   }
 
   .faq{
-    border-top: 6px solid #333;
+    border-top: 6px solid #888;
     padding: 10px 12%;
     padding-top: 60px;
     text-align: center;
@@ -195,7 +210,7 @@ body{
     align-items: center;
     padding: 20px;
     font-size: 18px;
-    font-weight: 500;
+    
     background: #303030;
     margin-bottom: 2px;
     cursor: pointer;
@@ -204,9 +219,10 @@ body{
 
   label::after{
     content: "+";
-    font-size: 34px;
+    font-size: 45px;
     position: absolute;
     right: 20px;
+    
     transition: transform 100ms;
   }
 
